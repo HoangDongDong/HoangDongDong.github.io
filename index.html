@@ -17,23 +17,7 @@
         </nav>
         <img class="Anhdaidien1" src="pictuer/dong.jpg" alt="  Anh đại diện" width="300" height="400">
         <img class="Anhdaidien2" src="pictuer/qr.jpg" alt="  Anh đại diện" width="300" height="300">
-        <p>
-            global start
-section .text
-start:
-mov rdx, output ; rdx holds address of next byte to write
-mov r8, 1 ; initial line length
-mov r9, 0 ; number of stars written on line so far
-line:
-mov byte [rdx], '*' ; write single star
-inc rdx ; advance pointer to next cell to write
-inc r9 ; "count" number so far on line
-cmp r9, r8 ; did we reach the number of stars for this line?
-jne line ; not yet, keep writing on this line
-lineDone:
-mov byte [rdx], 10 ; write a new line char
-inc rdx ; and move pointer to where next char goes
-        </p>
+        
         <div id="cha">
             <div id="left_side">
                 <h2 id="infor">Thông tin của tôi</h2>
